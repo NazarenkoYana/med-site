@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Manrope', sans-serif;
+    }
+
+    .look-calendar {
+        width: 893px;
+        margin: 0 auto;
+    }
+
+    #calendar {
+        width: 100%;
+        line-height: 1.2em;
+        font-size: 15px;
+        text-align: center;
+        border-spacing: 0;
+    }
+
+    #calendar tr.dn td {
+        width: 128px;
+        height: 30px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: #303841;
+        text-align: left;
+        padding-bottom: 15px;
+    }
+
+    #calendar tr.table-head td {
+        padding-bottom: 25px;
+    }
+
+    #calendar thead tr:last-child {
+        font-size: small;
+        color: #555555;
+    }
+
+    #calendar thead tr:nth-child(1) td:nth-child(2) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+        color: #303841;
+    }
+
+    #calendar thead tr:nth-child(1) td:nth-child(1):hover,
+    #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+        cursor: pointer;
+    }
+
+    #calendar tbody td {
+        width: 120px;
+        height: 110px;
+        border: 1px solid #AEAEAE;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        color: #303841;
+        text-align: left;
+        vertical-align: top;
+        padding: 8px;
+    }
+
+    #calendar tbody td:nth-child(n+6),
+    #calendar .holiday {
+        color: #e78c5c;
+    }
+
+    #calendar tbody td.today {
+        background: #EA9215;
+        color: #303841;
+    }
+
+</style>
+<body>
+<div class="look-calendar">
+    <table id="calendar">
+        <thead>
+        <tr class="table-head">
+            <td><b>‹</b></td>
+            <td colspan="5"></td>
+            <td><b>›</b></td>
+        </tr>
+        <tr class="dn">
+            <td>Пн</td>
+            <td>Вт</td>
+            <td>Ср</td>
+            <td>Чт</td>
+            <td>Пт</td>
+            <td>Сб</td>
+            <td>Вс</td>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script>
+    function calendar(id, year, month) {
+        var Dlast = new Date(year, month + 1, 0).getDate(),
+            D = new Date(year, month, Dlast),
+            DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
+            DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
+            calendar = '<tr>',
+            month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+        if (DNfirst !== 0) {
+            for (var i = 1; i < DNfirst; i++) calendar += '<td>';
+        } else {
+            for (var i = 0; i < 6; i++) calendar += '<td>';
+        }
+        for (var i = 1; i <= Dlast; i++) {
+            if (i === new Date().getDate() && D.getFullYear() === new Date().getFullYear() && D.getMonth() === new Date().getMonth()) {
+                calendar += '<td class="today">' + i;
+            } else {
+                calendar += '<td>' + i;
+            }
+            if (new Date(D.getFullYear(), D.getMonth(), i).getDay() === 0) {
+                calendar += '<tr>';
+            }
+        }
+        for (var i = DNlast; i < 7; i++) calendar += '<td> ';
+        document.querySelector('#' + id + ' tbody').innerHTML = calendar;
+        document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML = month[D.getMonth()] + ' ' + D.getFullYear();
+        document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
+        document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
+        // if (document.querySelectorAll('#' + id + ' tbody tr').length < 6) {
+        //     // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+        //     document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td> <td> <td> <td> <td> <td> <td> ';
+        // }
+    }
+
+    calendar("calendar", new Date().getFullYear(), new Date().getMonth());
+    // переключатель минус месяц
+    document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function () {
+        calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) - 1);
+    }
+    // переключатель плюс месяц
+    document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function () {
+        calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
+    }
+</script>
+</body>
+</html>
