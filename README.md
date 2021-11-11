@@ -1,2 +1,2 @@
-# maket
-[LIVE DEMO](https://nazarenkoyana.github.io//src/index.html)
+# med-site
+[LIVE DEMO](https://nazarenkoyana.github.io/med-site/src/index.html)
