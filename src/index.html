@@ -12,590 +12,805 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
           rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.css"
+          integrity="sha512-r+5gXtPk5M2lBWiI+/ITUncUNNO15gvjjVNVadv9qSd3/dsFZdpYuVu4O2yELRwSZcxlsPKOrMaC7Ug3+rbOXw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="header__container-content">
-            <div class="header-logo">
-                <img src="assets/images/header_logo.png" alt="" title="">
-            </div>
-            <div class="header-form">
-                <ul>
-                    <li><a class="header__link-active" href="#">зареєструватися</a></li>
-                    <li><a href="#">увійти</a></li>
-                    <li><a href="#"><img src="assets/images/header_form-register.png" alt="" title=""></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
-<section class="sub-header">
-    <div class="container">
-        <div class="sub-header__container-content">
-            <ul>
-                <li><a href="#">Новини</a></li>
-                <li><a href="#">наукові публікації</a></li>
-                <li><a href="#">відео галерея</a></li>
-                <li><a href="#">информация о препаратах</a></li>
-                <li><a href="#">Календар подій</a></li>
-                <li><a href="#">медичний калькулятор </a></li>
-                <li><a href="#">контакти</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
+<!--<header>-->
+<!--    <div class="container">-->
+<!--        <div class="header__container-content">-->
+<!--            <div class="header-logo">-->
+<!--                <img src="assets/images/header_logo.png" alt="" title="">-->
+<!--            </div>-->
+<!--            <div class="header-form">-->
+<!--                <ul>-->
+<!--&lt;!&ndash;                    <li><a class="header__link-active" href="#">зареєструватися</a></li>&ndash;&gt;-->
+<!--                    <li><a class="header__link-active" href="#">увійти</a></li>-->
+<!--                    <li><a href="#"><img src="assets/images/header_form-register.png" alt="" title=""></a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</header>-->
+<!--<section class="sub-header">-->
+<!--    <div class="container">-->
+<!--        <div class="sub-header__container-content">-->
+<!--            <ul>-->
+<!--                <li><a href="#">Новини</a></li>-->
+<!--                <li><a href="#">наукові публікації</a></li>-->
+<!--                <li><a href="#">відео галерея</a></li>-->
+<!--                <li><a href="#">информация о препаратах</a></li>-->
+<!--                <li><a href="#">Календар подій</a></li>-->
+<!--                <li><a href="#">медичний калькулятор </a></li>-->
+<!--                <li><a href="#">контакти</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+
+<!--        <div class="burger-menu">-->
+<!--            <ul class="menu">-->
+<!--                <li><a class="menuItem" href="#">продукты</a></li>-->
+<!--                <li><a class="menuItem" href="#">о нас</a></li>-->
+<!--                <li><a class="menuItem" href="#">портфолио</a></li>-->
+<!--                <li><a class="menuItem" href="#">контакты</a></li>-->
+<!--            </ul>-->
+<!--            <button class="hamburger" onclick="myFunction(this)">-->
+<!--                    <span class="bars">-->
+<!--                        <span class="bar1"></span>-->
+<!--                        <span class="bar2"></span>-->
+<!--                        <span class="bar3"></span>-->
+<!--                    </span>-->
+<!--            </button>-->
+<!--        </div>-->
+
+<!--        <ul class="contact-hide">-->
+<!--            <li><a href="#">контакти</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</section>-->
 
 
-<section class="news">
-    <div class="container">
-        <h3>Новини</h3>
-        <div class="news__container-content">
-            <div class="news__card-main">
-                <div class="card-main_image">
-                    <img src="assets/images/news_card-main.jpg" alt="" title="">
-                </div>
-                <div class="sub-title">
-                    № 40 (1311) 18 Жовтня 2021 р.
-                </div>
-                <h2> МОЗ дозволяє проводити вакцинацію проти <br>
-                    COVID-19 дітям віком від 12 років</h2>
-                <p class="card-main_desc">
-                    Міністерство охорони здоров’я України наказом від 13.10.2021 р. № 2234 вводить в дію рішення
-                    оперативного штабу <br>
-                    МОЗ з реагування на ситуації з поширення інфекційних хвороб, яким можна запобігти шляхом вакцинації.
-                    Згідно з <br>
-                    цим наказом дозволяється проводити вакцинацію від коронавірусної хвороби підліткам віком 12–17 років
-                    вакциною <br>
-                    Comirnaty від Pfizer/BioNTech. Мова йде про імунізацію підлітків незалежно від групи ризику, але за
-                    умови наявності <br>
-                    інших щеплень відповідно до віку та з урахуванням протипоказань.
-                </p>
-            </div>
+<!--<section class="news">-->
+<!--    <div class="container">-->
+<!--        <h3>Новини</h3>-->
+<!--        <div class="news__container-content">-->
+<!--            <div class="news__card-main">-->
+<!--                <div class="card-main_image">-->
+<!--                    <img src="assets/images/news_card-main.jpg" alt="" title="">-->
+<!--                </div>-->
+<!--                <div class="sub-title">-->
+<!--                    № 40 (1311) 18 Жовтня 2021 р.-->
+<!--                </div>-->
+<!--                <h2> МОЗ дозволяє проводити вакцинацію проти <br>-->
+<!--                    COVID-19 дітям віком від 12 років</h2>-->
+<!--                <p class="card-main_desc">-->
+<!--                    Міністерство охорони здоров’я України наказом від 13.10.2021 р. № 2234 вводить в дію рішення-->
+<!--                    оперативного штабу <br>-->
+<!--                    МОЗ з реагування на ситуації з поширення інфекційних хвороб, яким можна запобігти шляхом вакцинації.-->
+<!--                    Згідно з <br>-->
+<!--                    цим наказом дозволяється проводити вакцинацію від коронавірусної хвороби підліткам віком 12–17 років-->
+<!--                    вакциною <br>-->
+<!--                    Comirnaty від Pfizer/BioNTech. Мова йде про імунізацію підлітків незалежно від групи ризику, але за-->
+<!--                    умови наявності <br>-->
+<!--                    інших щеплень відповідно до віку та з урахуванням протипоказань.-->
+<!--                </p>-->
+<!--            </div>-->
 
-            <div class="card-container">
-                <div class="news__card">
-                    <div class="card-image">
-                        <img src="assets/images/news_card-1.jpg" alt="" title="">
-                    </div>
-                    <div class="news__card-content">
-                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>
-                        <h4>
-                            Розширення можливостей <br>
-                            лабораторій щодо здійснення <br>
-                            контролю якості ліків: МОЗ <br>
-                            оприлюднило проєкт наказу
-                        </h4>
-                    </div>
-                </div>
-                <div class="news__card">
-                    <div class="card-image">
-                        <img src="assets/images/news_card-2.jpg" alt="" title="">
-                    </div>
-                    <div class="news__card-content">
-                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>
-                        <h4>
-                            ПостCOVIDний фармринок: <br>
-                            кадрові питання та тенденції у <br>
-                            промоції ліків
-                        </h4>
-                    </div>
-                </div>
-                <div class="news__card">
-                    <div class="card-image">
-                        <img src="assets/images/news_card-3.jpg" alt="" title="">
-                    </div>
-                    <div class="news__card-content">
-                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>
-                        <h4>
-                            У період з 18 до 24 жовтня 94% <br>
-                            госпіталізованих осіб були <br>
-                            невакцинованими — МОЗ
-                        </h4>
-                    </div>
-                </div>
-                <div class="news__card">
-                    <div class="card-image">
-                        <img src="assets/images/news_card-4.jpg" alt="" title="">
-                    </div>
-                    <div class="news__card-content">
-                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>
-                        <h4>
-                            Ще 5 областей перебувають за <br>
-                            крок до посилення карантину — <br>
-                            Віктор Ляшко
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="center-bnt">
-            <a href="news.html" target="_blank">
-                <button class="see-more">більше новин</button>
-            </a>
-        </div>
-    </div>
-</section>
+<!--            <div class="card-container">-->
+<!--                <div class="news__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/news_card-1.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="news__card-content">-->
+<!--                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            Розширення можливостей <br>-->
+<!--                            лабораторій щодо здійснення <br>-->
+<!--                            контролю якості ліків: МОЗ <br>-->
+<!--                            оприлюднило проєкт наказу-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="news__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/news_card-2.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="news__card-content">-->
+<!--                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            ПостCOVIDний фармринок: <br>-->
+<!--                            кадрові питання та тенденції у <br>-->
+<!--                            промоції ліків-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="news__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/news_card-3.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="news__card-content">-->
+<!--                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            У період з 18 до 24 жовтня 94% <br>-->
+<!--                            госпіталізованих осіб були <br>-->
+<!--                            невакцинованими — МОЗ-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="news__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/news_card-4.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="news__card-content">-->
+<!--                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            Ще 5 областей перебувають за <br>-->
+<!--                            крок до посилення карантину — <br>-->
+<!--                            Віктор Ляшко-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="center-bnt">-->
+<!--            <a href="news.html" target="_blank">-->
+<!--                <button class="see-more">більше новин</button>-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
-<section class="publications">
-    <div class="container">
-        <h3>наукові публікації</h3>
+<!--<section class="publications">-->
+<!--    <div class="container">-->
+<!--        <h3>Наукові публікації</h3>-->
 
-        <div class="publications__container-content">
+<!--        <div class="publications__container-content">-->
 
-            <div class="card-container">
-                <div class="publications__card">
-                    <div class="card-image">
-                        <img src="assets/images/publications-card-1.jpg" alt="" title="">
-                    </div>
-                    <div class="publications__card-content">
-                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>
-                        <h4>
-                            Фармацевтична практика <br>
-                            в ЄС. Хто такий <br>
-                            фармацевт-технік?
-                        </h4>
-                    </div>
-                </div>
-                <div class="publications__card">
-                    <div class="card-image">
-                        <img src="assets/images/publications-card-2.jpg" alt="" title="">
-                    </div>
-                    <div class="publications__card-content">
-                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>
-                        <h4>
-                            Набули чинності зміни до <br>
-                            Ліцензійних умов
-                        </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="publications__card-main">
-                <div class="card-main_image">
-                    <img src="assets/images/publications-card-main.jpg" alt="" title="">
-                </div>
-                <div class="sub-title">
-                    № 40 (1311) 18 Жовтня 2021 р.
-                </div>
-                <h2> Міжнародна спільнота закликає не <br>
-                    нехтувати вакцинацією проти <br>
-                    поліомієліту
-                </h2>
-                <p class="card-main_desc">
-                    26 жовтня в інформаційному агентстві «Укрінформ» відбувся пресбрифінг на тему «Виявлення та <br>
-                    профілактика поліомієліту в Україні», організатором якого виступило Міністерство охорони <br>
-                    здоров’я України. Доповідачами на заході
-                </p>
-            </div>
-            <div class="card-container">
-                <div class="publications__card">
-                    <div class="card-image">
-                        <img src="assets/images/publications-card-3.jpg" alt="" title="">
-                    </div>
-                    <div class="publications__card-content">
-                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>
-                        <h4>
-                            МОЗ пропонує змінити підхід до <br>
-                            утилізації вакцин та анатоксинів в <br>
-                            аптечних умовах
-                        </h4>
-                    </div>
-                </div>
-                <div class="publications__card">
-                    <div class="card-image">
-                        <img src="assets/images/publications-card-4.jpg" alt="" title="">
-                    </div>
-                    <div class="publications__card-content">
-                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>
-                        <h4>
-                            Як замовити ліки через <br>
-                            інтернет в Європі?
-                        </h4>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="card-container">-->
+<!--                <div class="publications__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/publications-card-1.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="publications__card-content">-->
+<!--                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            Фармацевтична практика <br>-->
+<!--                            в ЄС. Хто такий <br>-->
+<!--                            фармацевт-технік?-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="publications__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/publications-card-2.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="publications__card-content">-->
+<!--                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            Набули чинності зміни до <br>-->
+<!--                            Ліцензійних умов-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="publications__card-main">-->
+<!--                <div class="card-main_image">-->
+<!--                    <img src="assets/images/publications-card-main.jpg" alt="" title="">-->
+<!--                </div>-->
+<!--                <div class="sub-title">-->
+<!--                    № 40 (1311) 18 Жовтня 2021 р.-->
+<!--                </div>-->
+<!--                <h2> Міжнародна спільнота закликає не <br>-->
+<!--                    нехтувати вакцинацією проти <br>-->
+<!--                    поліомієліту-->
+<!--                </h2>-->
+<!--                <p class="card-main_desc">-->
+<!--                    26 жовтня в інформаційному агентстві «Укрінформ» відбувся пресбрифінг на тему «Виявлення та <br>-->
+<!--                    профілактика поліомієліту в Україні», організатором якого виступило Міністерство охорони <br>-->
+<!--                    здоров’я України. Доповідачами на заході-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="card-container card-container-hide">-->
+<!--                <div class="publications__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/publications-card-3.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="publications__card-content">-->
+<!--                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            МОЗ пропонує змінити підхід до <br>-->
+<!--                            утилізації вакцин та анатоксинів в <br>-->
+<!--                            аптечних умовах-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="publications__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/publications-card-4.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="publications__card-content">-->
+<!--                        <div class="sub-title">№ 40 (1311) 18 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            Як замовити ліки через <br>-->
+<!--                            інтернет в Європі?-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-        </div>
+<!--        </div>-->
 
-        <div class="center-bnt">
-            <button class="see-more">більше публікацій</button>
-        </div>
-    </div>
-</section>
+<!--        <div class="center-bnt">-->
+<!--            <button class="see-more">більше публікацій</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
-<section class="video-gallery">
-    <div class="container">
-        <h3>відео галерея</h3>
-        <div class="video-gallery__container-content">
+<!--<section class="video-gallery">-->
+<!--    <div class="container">-->
+<!--        <h3>відео галерея</h3>-->
+<!--        <div class="video-gallery__container-content">-->
 
-            <div class="video-gallery-main">
-                <div class="card-main_video">
-                    <img src="assets/images/video-gallery-main.jpg" alt="" title="">
-                </div>
-                <div class="sub-title">
-                    3 Листопада 2021 р.
-                </div>
-                <h2> 2-й Український форум операторів ринку <br>
-                    косметичної продукції та дезінфекційних <br>
-                    засобів</h2>
-            </div>
+<!--            <div class="video-gallery-main">-->
+<!--                <div class="card-main_video">-->
+<!--                    <img src="assets/images/video-gallery-main.jpg" alt="" title="">-->
+<!--                </div>-->
+<!--                <div class="sub-title">-->
+<!--                    3 Листопада 2021 р.-->
+<!--                </div>-->
+<!--                <h2> 2-й Український форум операторів ринку <br>-->
+<!--                    косметичної продукції та дезінфекційних <br>-->
+<!--                    засобів</h2>-->
+<!--            </div>-->
 
-            <div class="card-container">
-                <div class="video-gallery__card">
-                    <div class="card-video">
-                        <img src="assets/images/video-gallery-card-1.jpg" alt="" title="">
-                    </div>
-                    <div class="video-gallery__card-content">
-                        <div class="sub-title">13 Жовтня 2021 р.</div>
-                        <h4>
-                            11-й Аптечний саміт <br>
-                            України 2021
-                        </h4>
-                    </div>
-                </div>
-                <div class="video-gallery__card">
-                    <div class="card-video">
-                        <img src="assets/images/video-gallery-card-2.jpg" alt="" title="">
-                    </div>
-                    <div class="video-gallery__card-content">
-                        <div class="sub-title">7 Жовтня 2021 р.</div>
-                        <h4>
-                            2-й Український форум операторів <br>
-                            ринку косметичної продукції
-                        </h4>
-                    </div>
-                </div>
-                <div class="video-gallery__card">
-                    <div class="card-video">
-                        <img src="assets/images/video-gallery-card-3.jpg" alt="" title="">
-                    </div>
-                    <div class="video-gallery__card-content">
-                        <div class="sub-title">12 Квітня 2021р.</div>
-                        <h4>
-                            XII Міжнародна конференція- <br>
-                            практикум SALES FORCE <br>
-                            EFFECTIVENESS–2021
-                        </h4>
-                    </div>
-                </div>
-                <div class="video-gallery__card">
-                    <div class="card-video">
-                        <img src="assets/images/video-gallery-card-4.jpg" alt="" title="">
-                    </div>
-                    <div class="video-gallery__card-content">
-                        <div class="sub-title">12 Квітня 2021р.</div>
-                        <h4>
-                            10-й Ювілейний український форум <br>
-                            операторів ринку медичних виробів
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="center-bnt">
-            <button class="see-more">більше відео</button>
-        </div>
-    </div>
-</section>
+<!--            <div class="card-container">-->
+<!--                <div class="video-gallery__card">-->
+<!--                    <div class="card-video">-->
+<!--                        <img src="assets/images/video-gallery-card-1.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="video-gallery__card-content">-->
+<!--                        <div class="sub-title">13 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            11-й Аптечний саміт <br>-->
+<!--                            України 2021-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="video-gallery__card">-->
+<!--                    <div class="card-video">-->
+<!--                        <img src="assets/images/video-gallery-card-2.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="video-gallery__card-content">-->
+<!--                        <div class="sub-title">7 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            2-й Український форум операторів <br>-->
+<!--                            ринку косметичної продукції-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="video-gallery__card">-->
+<!--                    <div class="card-video">-->
+<!--                        <img src="assets/images/video-gallery-card-3.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="video-gallery__card-content">-->
+<!--                        <div class="sub-title">12 Квітня 2021р.</div>-->
+<!--                        <h4>-->
+<!--                            XII Міжнародна конференція- <br>-->
+<!--                            практикум SALES FORCE <br>-->
+<!--                            EFFECTIVENESS–2021-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="video-gallery__card">-->
+<!--                    <div class="card-video">-->
+<!--                        <img src="assets/images/video-gallery-card-4.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="video-gallery__card-content">-->
+<!--                        <div class="sub-title">12 Квітня 2021р.</div>-->
+<!--                        <h4>-->
+<!--                            10-й Ювілейний український форум <br>-->
+<!--                            операторів ринку медичних виробів-->
+<!--                        </h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-<section class="info-preparation">
-    <div class="container">
-        <h3>информация о препаратах</h3>
+<!--        </div>-->
+<!--        <div class="center-bnt">-->
+<!--            <button class="see-more">більше відео</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
-        <div class="info-preparation__container-content">
-            <div class="info-preparation__card">
-                <div class="card-container">
-                    <div class="card-desc">
-                        <div class="sub-title">
-                            Альдазол
-                        </div>
-                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>
-                        <span><b>Дозировка: </b>400 мг</span>
-                        <span><b>Количество в упаковке: </b>3</span>
-                        <span><b>Производитель: </b>Киевский витаминный завод</span>
-                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>
-                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>
-                        <span><b>Условия отпуска: </b>По рецепту</span>
+<!--&lt;!&ndash;only-mobile&ndash;&gt;-->
+<!--<section class="video-gallery-mobile">-->
 
-                        <div class="card-desc__title">Показания</div>
-                    </div>
-                    <div class="card-image">
-                        <img src="assets/images/card-info-1.jpg" alt="" title="">
-                    </div>
-                </div>
+<!--    <h3>відео галерея</h3>-->
 
-                <div class="card-about">
-                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>
-                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>
-                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>
-                        у детей.</p>
-                </div>
-            </div>
-            <div class="info-preparation__card">
-                <div class="card-container">
-                    <div class="card-desc">
-                        <div class="sub-title">
-                            Альдазол
-                        </div>
-                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>
-                        <span><b>Дозировка: </b>400 мг</span>
-                        <span><b>Количество в упаковке: </b>3</span>
-                        <span><b>Производитель: </b>Киевский витаминный завод</span>
-                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>
-                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>
-                        <span><b>Условия отпуска: </b>По рецепту</span>
-                        <div class="card-desc__title">Показания</div>
-                    </div>
-                    <div class="card-image">
-                        <img src="assets/images/card-info-2.jpg" alt="" title="">
-                    </div>
-                </div>
-                <div class="card-about">
-                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>
-                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>
-                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>
-                        у детей.</p>
-                </div>
-            </div>
-            <div class="info-preparation__card">
-                <div class="card-container">
-                    <div class="card-desc">
-                        <div class="sub-title">
-                            Альдазол
-                        </div>
-                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>
-                        <span><b>Дозировка: </b>400 мг</span>
-                        <span><b>Количество в упаковке: </b>3</span>
-                        <span><b>Производитель: </b>Киевский витаминный завод</span>
-                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>
-                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>
-                        <span><b>Условия отпуска: </b>По рецепту</span>
-                        <div class="card-desc__title">Показания</div>
-                    </div>
-                    <div class="card-image">
-                        <img src="assets/images/card-info-3.jpg" alt="" title="">
-                    </div>
-                </div>
-                <div class="card-about">
-                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>
-                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>
-                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>
-                        у детей.</p>
-                </div>
-            </div>
-            <div class="info-preparation__card">
-                <div class="card-container">
-                    <div class="card-desc">
-                        <div class="sub-title">
-                            Альдазол
-                        </div>
-                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>
-                        <span><b>Дозировка: </b>400 мг</span>
-                        <span><b>Количество в упаковке: </b>3</span>
-                        <span><b>Производитель: </b>Киевский витаминный завод</span>
-                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>
-                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>
-                        <span><b>Условия отпуска: </b>По рецепту</span>
-                        <div class="card-desc__title">Показания</div>
-                    </div>
-                    <div class="card-image">
-                        <img src="assets/images/card-info-4.jpg" alt="" title="">
-                    </div>
-                </div>
-                <div class="card-about">
-                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>
-                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>
-                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>
-                        у детей.</p>
-                </div>
-            </div>
-            <div class="info-preparation__card">
-                <div class="card-container">
-                    <div class="card-desc">
-                        <div class="sub-title">
-                            Альдазол
-                        </div>
-                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>
-                        <span><b>Дозировка: </b>400 мг</span>
-                        <span><b>Количество в упаковке: </b>3</span>
-                        <span><b>Производитель: </b>Киевский витаминный завод</span>
-                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>
-                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>
-                        <span><b>Условия отпуска: </b>По рецепту</span>
-                        <div class="card-desc__title">Показания</div>
-                    </div>
-                    <div class="card-image">
-                        <img src="assets/images/card-info-5.jpg" alt="" title="">
-                    </div>
-                </div>
-                <div class="card-about">
-                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>
-                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>
-                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>
-                        у детей.</p>
-                </div>
-            </div>
-            <div class="info-preparation__card">
-                <div class="card-container">
-                    <div class="card-desc">
-                        <div class="sub-title">
-                            Альдазол
-                        </div>
-                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>
-                        <span><b>Дозировка: </b>400 мг</span>
-                        <span><b>Количество в упаковке: </b>3</span>
-                        <span><b>Производитель: </b>Киевский витаминный завод</span>
-                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>
-                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>
-                        <span><b>Условия отпуска: </b>По рецепту</span>
-                        <div class="card-desc__title">Показания</div>
-                    </div>
-                    <div class="card-image">
-                        <img src="assets/images/card-info-6.jpg" alt="" title="">
-                    </div>
-                </div>
-                <div class="card-about">
-                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>
-                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>
-                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>
-                        у детей.</p>
-                </div>
-            </div>
-        </div>
+<!--    <div class="video-gallery__container-content-mobile">-->
 
-        <div class="center-bnt">
-            <button class="see-more">більше препаратів</button>
-        </div>
-    </div>
-</section>
+<!--        <div class="video-gallery__card">-->
+<!--            <div class="card-video">-->
+<!--                <img src="assets/images/video-gallery-card-1.jpg" alt="" title="">-->
+<!--            </div>-->
+<!--            <div class="video-gallery__card-content">-->
+<!--                <div class="sub-title">3 Листопада 2021 р.</div>-->
+<!--                <h4>-->
+<!--                    2-й Український форум операторів ринку <br>-->
+<!--                    косметичної продукції та дезінфекційних <br>-->
+<!--                    засобів-->
+<!--                </h4>-->
+<!--            </div>-->
+<!--        </div>-->
 
+<!--        <div class="video-gallery__card">-->
+<!--            <div class="card-video">-->
+<!--                <img src="assets/images/video-gallery-card-1.jpg" alt="" title="">-->
+<!--            </div>-->
+<!--            <div class="video-gallery__card-content">-->
+<!--                <div class="sub-title">13 Жовтня 2021 р.</div>-->
+<!--                <h4>-->
+<!--                    11-й Аптечний саміт <br>-->
+<!--                    України 2021-->
+<!--                </h4>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="video-gallery__card">-->
+<!--            <div class="card-video">-->
+<!--                <img src="assets/images/video-gallery-card-2.jpg" alt="" title="">-->
+<!--            </div>-->
+<!--            <div class="video-gallery__card-content">-->
+<!--                <div class="sub-title">7 Жовтня 2021 р.</div>-->
+<!--                <h4>-->
+<!--                    2-й Український форум операторів <br>-->
+<!--                    ринку косметичної продукції-->
+<!--                </h4>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="video-gallery__card">-->
+<!--            <div class="card-video">-->
+<!--                <img src="assets/images/video-gallery-card-3.jpg" alt="" title="">-->
+<!--            </div>-->
+<!--            <div class="video-gallery__card-content">-->
+<!--                <div class="sub-title">12 Квітня 2021р.</div>-->
+<!--                <h4>-->
+<!--                    XII Міжнародна конференція- <br>-->
+<!--                    практикум SALES FORCE <br>-->
+<!--                    EFFECTIVENESS–2021-->
+<!--                </h4>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="video-gallery__card">-->
+<!--            <div class="card-video">-->
+<!--                <img src="assets/images/video-gallery-card-4.jpg" alt="" title="">-->
+<!--            </div>-->
+<!--            <div class="video-gallery__card-content">-->
+<!--                <div class="sub-title">12 Квітня 2021р.</div>-->
+<!--                <h4>-->
+<!--                    10-й Ювілейний український форум <br>-->
+<!--                    операторів ринку медичних виробів-->
+<!--                </h4>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="center-bnt">-->
+<!--        <button class="see-more">більше відео</button>-->
+<!--    </div>-->
+<!--</section>-->
+<!--&lt;!&ndash;end only-mobile&ndash;&gt;-->
 
-<section class="calendar">
-    <div class="container">
-        <h3>Календар подій</h3>
-        <div class="calendar__container-content">
+<!--<section class="info-preparation">-->
+<!--    <div class="container">-->
+<!--        <h3>информация о препаратах</h3>-->
 
-            <div class="calendar__card-main">
-                <div class="card-main_image">
-                    <div class="look-calendar">
-                        <table id="calendar">
-                            <thead>
-                            <tr class="table-head">
-                                <td><b>‹</b></td>
-                                <td colspan="5"></td>
-                                <td><b>›</b></td>
-                            </tr>
-                            <tr class="dn">
-                                <td>Пн</td>
-                                <td>Вт</td>
-                                <td>Ср</td>
-                                <td>Чт</td>
-                                <td>Пт</td>
-                                <td>Сб</td>
-                                <td>Вс</td>
-                            </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="sub-title">
-                    3 Листопада 2021 р.
-                </div>
-                <h2> 2-й Український форум операторів ринку <br>
-                    косметичної продукції та дезінфекційних <br>
-                    засобів</h2>
-                <p class="card-main_desc">
-                    Український форум операторів ринку косметичної продукції та дезінфекційних засобів проводиться за
-                    ініціативи <br>
-                    Асоціації «Оператори ринку медичних виробів» AMOMD з акцентом на регуляторний та економічний аспект
-                    <br>
-                    функціонування даних ринків.
-                </p>
-                <div class="location">
-                    <img src="assets/images/Vector-location.png" alt="" title="">
-                    <p>UBI КОНФЕРЕНЦ ХОЛ </p>
-                </div>
-            </div>
+<!--        <div class="info-preparation__container-content">-->
+<!--            <div class="info-preparation__card">-->
+<!--                <div class="card-container">-->
+<!--                    <div class="card-desc">-->
+<!--                        <div class="sub-title">-->
+<!--                            Альдазол-->
+<!--                        </div>-->
+<!--                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                        <span><b>Дозировка: </b>400 мг</span>-->
+<!--                        <span><b>Количество в упаковке: </b>3</span>-->
+<!--                        <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                        <span><b>Условия отпуска: </b>По рецепту</span>-->
 
-            <div class="card-container">
-                <h3>найближчі події</h3>
-                <div class="calendar__card">
-                    <div class="card-image">
-                        <img src="assets/images/calendar-cart-1.jpg" alt="" title="">
-                    </div>
-                    <div class="calendar__card-content">
-                        <div class="sub-title"> 13 Жовтня 2021 р.</div>
-                        <h4>
-                            11-й Аптечний саміт України <br>
-                            2021
-                        </h4>
-                        <div class="location">
-                            <img src="assets/images/Vector-location.png" alt="" title="">
-                            <p>MERCURЕ KYIV CONGRESS CENTRE</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="calendar__card">
-                    <div class="card-image">
-                        <img src="assets/images/calendar-cart-2.jpg" alt="" title="">
-                    </div>
-                    <div class="calendar__card-content">
-                        <div class="sub-title"> 7 Жовтня 2021 р.</div>
-                        <h4>
-                            2-й Український форум <br>
-                            операторів ринку косметичної <br>
-                            продукції та дезінфекційних <br>
-                            засобів
-                        </h4>
-                        <div class="location">
-                            <img src="assets/images/Vector-location.png" alt="" title="">
-                            <p>UBI КОНФЕРЕНЦ ХОЛ </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="calendar__card">
-                    <div class="card-image">
-                        <img src="assets/images/calendar-cart-3.jpg" alt="" title="">
-                    </div>
-                    <div class="calendar__card-content">
-                        <div class="sub-title">12 Квітня 2021р.</div>
-                        <h4>
-                            XII Міжнародна конференція- <br>
-                            практикум SALES FORCE <br>
-                            EFFECTIVENESS–2021
-                        </h4>
-                        <div class="location">
-                            <img src="assets/images/Vector-location.png" alt="" title="">
-                            <p>UBI КОНФЕРЕНЦ ХОЛ </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="calendar__card">
-                    <div class="card-image">
-                        <img src="assets/images/calendar-cart-4.jpg" alt="" title="">
-                    </div>
-                    <div class="calendar__card-content">
-                        <div class="sub-title">12 Квітня 2021р.</div>
-                        <h4>
-                            10-й Ювілейний український <br>
-                            форум операторів ринку <br>
-                            медичних виробів
-                        </h4>
-                        <div class="location">
-                            <img src="assets/images/Vector-location.png" alt="" title="">
-                            <p>UBI КОНФЕРЕНЦ ХОЛ </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="center-bnt">
-            <button class="see-more">більше подій</button>
-        </div>
-    </div>
-</section>
+<!--                        <div class="card-desc__title">Показания</div>-->
+<!--                    </div>-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/card-info-1.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="card-about">-->
+<!--                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>-->
+<!--                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>-->
+<!--                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>-->
+<!--                        у детей.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="info-preparation__card">-->
+<!--                <div class="card-container">-->
+<!--                    <div class="card-desc">-->
+<!--                        <div class="sub-title">-->
+<!--                            Альдазол-->
+<!--                        </div>-->
+<!--                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                        <span><b>Дозировка: </b>400 мг</span>-->
+<!--                        <span><b>Количество в упаковке: </b>3</span>-->
+<!--                        <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                        <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                        <div class="card-desc__title">Показания</div>-->
+<!--                    </div>-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/card-info-2.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-about">-->
+<!--                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>-->
+<!--                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>-->
+<!--                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>-->
+<!--                        у детей.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="info-preparation__card">-->
+<!--                <div class="card-container">-->
+<!--                    <div class="card-desc">-->
+<!--                        <div class="sub-title">-->
+<!--                            Альдазол-->
+<!--                        </div>-->
+<!--                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                        <span><b>Дозировка: </b>400 мг</span>-->
+<!--                        <span><b>Количество в упаковке: </b>3</span>-->
+<!--                        <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                        <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                        <div class="card-desc__title">Показания</div>-->
+<!--                    </div>-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/card-info-3.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-about">-->
+<!--                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>-->
+<!--                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>-->
+<!--                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>-->
+<!--                        у детей.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="info-preparation__card info-card-hide">-->
+<!--                <div class="card-container">-->
+<!--                    <div class="card-desc">-->
+<!--                        <div class="sub-title">-->
+<!--                            Альдазол-->
+<!--                        </div>-->
+<!--                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                        <span><b>Дозировка: </b>400 мг</span>-->
+<!--                        <span><b>Количество в упаковке: </b>3</span>-->
+<!--                        <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                        <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                        <div class="card-desc__title">Показания</div>-->
+<!--                    </div>-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/card-info-4.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-about">-->
+<!--                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>-->
+<!--                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>-->
+<!--                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>-->
+<!--                        у детей.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="info-preparation__card info-card-hide">-->
+<!--                <div class="card-container">-->
+<!--                    <div class="card-desc">-->
+<!--                        <div class="sub-title">-->
+<!--                            Альдазол-->
+<!--                        </div>-->
+<!--                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                        <span><b>Дозировка: </b>400 мг</span>-->
+<!--                        <span><b>Количество в упаковке: </b>3</span>-->
+<!--                        <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                        <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                        <div class="card-desc__title">Показания</div>-->
+<!--                    </div>-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/card-info-5.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-about">-->
+<!--                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>-->
+<!--                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>-->
+<!--                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>-->
+<!--                        у детей.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="info-preparation__card info-card-hide">-->
+<!--                <div class="card-container">-->
+<!--                    <div class="card-desc">-->
+<!--                        <div class="sub-title">-->
+<!--                            Альдазол-->
+<!--                        </div>-->
+<!--                        <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                        <span><b>Дозировка: </b>400 мг</span>-->
+<!--                        <span><b>Количество в упаковке: </b>3</span>-->
+<!--                        <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                        <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                        <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                        <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                        <div class="card-desc__title">Показания</div>-->
+<!--                    </div>-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/card-info-6.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-about">-->
+<!--                    <p>Кишечные формы гельминтозов и кожный синдром Larva Migrans (краткосрочное лечение малыми <br>-->
+<!--                        дозами): энтеробиоз, анкилостомоз и некатороз, гименолепидоз, тениоз, стронгилоидоз, <br>-->
+<!--                        аскаридоз, трихоцефалез, клонорхоз, описторхоз, кожный синдром Larva Migrans, лямблиоз <br>-->
+<!--                        у детей.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="center-bnt">-->
+<!--            <button class="see-more">більше препаратів</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="info-preparation-mobile">-->
+<!--    <h3>информация о препаратах</h3>-->
+<!--    &lt;!&ndash;only mobile&ndash;&gt;-->
+<!--    <div class="info-preparation__mobile">-->
+<!--        <div class="info-preparation__card">-->
+<!--            <div class="card-container">-->
+<!--                <div class="card-desc">-->
+<!--                    <div class="sub-title">-->
+<!--                        Альдазол-->
+<!--                    </div>-->
+<!--                    <img src="assets/images/card-info-1.jpg" alt="" title="">-->
+<!--                    <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                    <span><b>Дозировка: </b>400 мг</span>-->
+<!--                    <span><b>Количество в упаковке: </b>3</span>-->
+<!--                    <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                    <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                    <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                    <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="info-preparation__card">-->
+<!--            <div class="card-container">-->
+<!--                <div class="card-desc">-->
+<!--                    <div class="sub-title">Альдазол</div>-->
+<!--                    <img src="assets/images/card-info-2.jpg" alt="" title="">-->
+<!--                    <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                    <span><b>Дозировка: </b>400 мг</span>-->
+<!--                    <span><b>Количество в упаковке: </b>3</span>-->
+<!--                    <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                    <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                    <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                    <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </div>-->
+<!--        <div class="info-preparation__card">-->
+<!--            <div class="card-container">-->
+<!--                <div class="card-desc">-->
+<!--                    <div class="sub-title">Альдазол</div>-->
+<!--                    <img src="assets/images/card-info-3.jpg" alt="" title="">-->
+<!--                    <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                    <span><b>Дозировка: </b>400 мг</span>-->
+<!--                    <span><b>Количество в упаковке: </b>3</span>-->
+<!--                    <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                    <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                    <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                    <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="info-preparation__card">-->
+<!--            <div class="card-container">-->
+<!--                <div class="card-desc">-->
+<!--                    <div class="sub-title">Альдазол</div>-->
+<!--                    <img src="assets/images/card-info-4.jpg" alt="" title="">-->
+<!--                    <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                    <span><b>Дозировка: </b>400 мг</span>-->
+<!--                    <span><b>Количество в упаковке: </b>3</span>-->
+<!--                    <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                    <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                    <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                    <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="info-preparation__card">-->
+<!--            <div class="card-container">-->
+<!--                <div class="card-desc">-->
+<!--                    <div class="sub-title">Альдазол</div>-->
+<!--                    <img src="assets/images/card-info-5.jpg" alt="" title="">-->
+<!--                    <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                    <span><b>Дозировка: </b>400 мг</span>-->
+<!--                    <span><b>Количество в упаковке: </b>3</span>-->
+<!--                    <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                    <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                    <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                    <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="info-preparation__card">-->
+<!--            <div class="card-container">-->
+<!--                <div class="card-desc">-->
+<!--                    <div class="sub-title">Альдазол</div>-->
+<!--                    <img src="assets/images/card-info-6.jpg" alt="" title="">-->
+<!--                    <span><b>Форма выпуска: </b>таблетки, покрытые пленочной оболочкой</span>-->
+<!--                    <span><b>Дозировка: </b>400 мг</span>-->
+<!--                    <span><b>Количество в упаковке: </b>3</span>-->
+<!--                    <span><b>Производитель: </b>Киевский витаминный завод</span>-->
+<!--                    <span><b>Сертификат: </b>№UA/9351/01/01 от 13.07.2018</span>-->
+<!--                    <span><b>Международное название: </b>Albendazolum (Альбендазол)</span>-->
+<!--                    <span><b>Условия отпуска: </b>По рецепту</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; end only mobile&ndash;&gt;-->
+
+<!--    <div class="center-bnt">-->
+<!--        <button class="see-more">більше препаратів</button>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="calendar">-->
+<!--    <div class="container">-->
+<!--        <h3>Календар подій</h3>-->
+<!--        <div class="calendar__container-content">-->
+
+<!--            <div class="calendar__card-main">-->
+
+<!--                <div class="card-main_view">-->
+<!--                    <div class="look-calendar">-->
+<!--                        <table id="calendar">-->
+<!--                            <thead>-->
+<!--                            <tr class="table-head">-->
+<!--                                <td><b>‹</b></td>-->
+<!--                                <td colspan="5"></td>-->
+<!--                                <td><b>›</b></td>-->
+<!--                            </tr>-->
+<!--                            <tr class="dn">-->
+<!--                                <td>Пн</td>-->
+<!--                                <td>Вт</td>-->
+<!--                                <td>Ср</td>-->
+<!--                                <td>Чт</td>-->
+<!--                                <td>Пт</td>-->
+<!--                                <td>Сб</td>-->
+<!--                                <td>Вс</td>-->
+<!--                            </tr>-->
+<!--                            </thead>-->
+<!--                            <tbody></tbody>-->
+<!--                        </table>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="calendar__card-main__about">-->
+<!--                    <div class="sub-title">-->
+<!--                        3 Листопада 2021 р.-->
+<!--                    </div>-->
+<!--                    <h2> 2-й Український форум операторів ринку <br>-->
+<!--                        косметичної продукції та дезінфекційних <br>-->
+<!--                        засобів</h2>-->
+<!--                    <p class="card-main_desc">-->
+<!--                        Український форум операторів ринку косметичної продукції та дезінфекційних засобів проводиться-->
+<!--                        за-->
+<!--                        ініціативи <br>-->
+<!--                        Асоціації «Оператори ринку медичних виробів» AMOMD з акцентом на регуляторний та економічний-->
+<!--                        аспект-->
+<!--                        <br>-->
+<!--                        функціонування даних ринків.-->
+<!--                    </p>-->
+<!--                    <div class="location">-->
+<!--                        <img src="assets/images/Vector-location.png" alt="" title="">-->
+<!--                        <p>UBI КОНФЕРЕНЦ ХОЛ </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+<!--            <div class="card-container">-->
+<!--                <h3>найближчі події</h3>-->
+<!--                <div class="calendar__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/calendar-cart-1.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="calendar__card-content">-->
+<!--                        <div class="sub-title"> 13 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            11-й Аптечний саміт України <br>-->
+<!--                            2021-->
+<!--                        </h4>-->
+<!--                        <div class="location">-->
+<!--                            <img src="assets/images/Vector-location.png" alt="" title="">-->
+<!--                            <p>MERCURЕ KYIV CONGRESS CENTRE</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="calendar__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/calendar-cart-2.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="calendar__card-content">-->
+<!--                        <div class="sub-title"> 7 Жовтня 2021 р.</div>-->
+<!--                        <h4>-->
+<!--                            2-й Український форум <br>-->
+<!--                            операторів ринку косметичної <br>-->
+<!--                            продукції та дезінфекційних <br>-->
+<!--                            засобів-->
+<!--                        </h4>-->
+<!--                        <div class="location">-->
+<!--                            <img src="assets/images/Vector-location.png" alt="" title="">-->
+<!--                            <p>UBI КОНФЕРЕНЦ ХОЛ </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="calendar__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/calendar-cart-3.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="calendar__card-content">-->
+<!--                        <div class="sub-title">12 Квітня 2021р.</div>-->
+<!--                        <h4>-->
+<!--                            XII Міжнародна конференція- <br>-->
+<!--                            практикум SALES FORCE <br>-->
+<!--                            EFFECTIVENESS–2021-->
+<!--                        </h4>-->
+<!--                        <div class="location">-->
+<!--                            <img src="assets/images/Vector-location.png" alt="" title="">-->
+<!--                            <p>UBI КОНФЕРЕНЦ ХОЛ </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="calendar__card">-->
+<!--                    <div class="card-image">-->
+<!--                        <img src="assets/images/calendar-cart-4.jpg" alt="" title="">-->
+<!--                    </div>-->
+<!--                    <div class="calendar__card-content">-->
+<!--                        <div class="sub-title">12 Квітня 2021р.</div>-->
+<!--                        <h4>-->
+<!--                            10-й Ювілейний український <br>-->
+<!--                            форум операторів ринку <br>-->
+<!--                            медичних виробів-->
+<!--                        </h4>-->
+<!--                        <div class="location">-->
+<!--                            <img src="assets/images/Vector-location.png" alt="" title="">-->
+<!--                            <p>UBI КОНФЕРЕНЦ ХОЛ </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="center-bnt">-->
+<!--            <button class="see-more">більше подій</button>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--</section>-->
 
 <footer>
     <div class="container">
@@ -608,7 +823,10 @@
                     Видання є спеціалізованим і адресовано <br>
                     спеціалістам сфери охорони здоров’я
                 </p>
-                <button class="btn-register">зареєструватися</button>
+                <div class="btn-register-center">
+                    <button class="btn-register">увійти</button>
+                </div>
+
             </div>
 
             <div class="footer__menu">
@@ -634,8 +852,14 @@
         </div>
     </div>
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.js"
+        integrity="sha512-lzNiA4Ry7CjL8ewMGFZ5XD4wIVaUhvV3Ct9BeFmWmyq6MFc42AdOCUiuUtQgkrVVELHA1kT7xfSLoihwssusQw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/calendar.js"></script>
+<script src="js/burger.js"></script>
+<script src="js/info-preparation-slider.js"></script>
+<script src="js/video-gallery-slider.js"></script>
 
 
 </body>
