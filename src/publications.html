@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
           rel="stylesheet">
 
-</hea>
+</head>
 <body>
 <header>
     <div class="container">
@@ -22,14 +22,14 @@
             </div>
             <div class="header-form">
                 <ul>
-                    <li><a class="header__link-active" href="#">зареєструватися</a></li>
-                    <li><a href="#">увійти</a></li>
+                    <li><a class="header__link-active" href="#">увійти</a></li>
                     <li><a href="#"><img src="assets/images/header_form-register.png" alt="" title=""></a></li>
                 </ul>
             </div>
         </div>
     </div>
 </header>
+
 <section class="sub-header">
     <div class="container">
         <div class="sub-header__container-content">
@@ -43,12 +43,37 @@
                 <li><a href="#">контакти</a></li>
             </ul>
         </div>
+
+        <div class="burger-menu">
+            <ul class="menu">
+                <li><a class="menuItem" href="#">Новини</a></li>
+                <li><a class="menuItem" href="#">наукові публікації</a></li>
+                <li><a class="menuItem" href="#">відео галерея</a></li>
+                <li><a class="menuItem" href="#">информация о препаратах</a></li>
+                <li><a class="menuItem" href="#">Календар подій</a></li>
+                <li><a class="menuItem" href="#">медичний калькулятор</a></li>
+                <li><a class="menuItem" href="#">контакти</a></li>
+            </ul>
+            <button class="hamburger" onclick="myFunction(this)">
+                    <span class="bars">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </span>
+            </button>
+        </div>
+
+        <ul class="contact-hide">
+            <li><a href="#">контакти</a></li>
+            <li><a class="header__link-active-mobile" href="#">увійти</a></li>
+        </ul>
     </div>
 </section>
 
 <section class="publications">
     <div class="container">
-        <h3>наукові публікації</h3>
+        <h3>Наукові публікації</h3>
+
         <div class="publications__container-content">
 
             <div class="card-container">
@@ -95,7 +120,7 @@
                     здоров’я України. Доповідачами на заході
                 </p>
             </div>
-            <div class="card-container">
+            <div class="card-container card-container-hide">
                 <div class="publications__card">
                     <div class="card-image">
                         <img src="assets/images/publications-card-3.jpg" alt="" title="">
@@ -124,6 +149,12 @@
             </div>
 
         </div>
+
+       <!--  <div class="center-bnt">
+            <a href="publications.html">
+                 <button class="see-more">більше публікацій</button>
+            </a>
+        </div> -->
     </div>
 </section>
 
@@ -294,18 +325,25 @@
                     Видання є спеціалізованим і адресовано <br>
                     спеціалістам сфери охорони здоров’я
                 </p>
-                <button class="btn-register">зареєструватися</button>
+                <div class="btn-register-center">
+                    <button class="btn-register">увійти</button>
+                </div>
+
             </div>
 
             <div class="footer__menu">
+                <ul class="ul-visible">
+                    <li><a class="link-visible" href="#">Новини</a></li>
+                    <li><a href="#">контакти</a></li>
+                </ul>
                 <ul>
-                    <li><a href="#">Новини</a></li>
+                    <li><a class="link-hide" href="#">Новини</a></li>
                     <li><a href="#">наукові публікації</a></li>
                     <li><a href="#">відео галерея</a></li>
                     <li><a href="#">информация о препаратах</a></li>
                     <li><a href="#">Календар подій</a></li>
                     <li><a href="#">медичний калькулятор</a></li>
-                    <li><a href="#">контакти</a></li>
+                    <li><a class="link-hide" href="#">контакти</a></li>
                 </ul>
             </div>
         </div>
@@ -320,5 +358,7 @@
         </div>
     </div>
 </footer>
+
+<script src="js/burger.js"></script>
 </body>
 </html>

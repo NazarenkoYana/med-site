@@ -52,7 +52,8 @@
         <div class="calendar__container-content">
 
             <div class="calendar__card-main">
-                <div class="card-main_image">
+
+                <div class="card-main_view">
                     <div class="look-calendar">
                         <table id="calendar">
                             <thead>
@@ -75,26 +76,32 @@
                         </table>
                     </div>
                 </div>
-                <div class="sub-title">
-                    3 Листопада 2021 р.
+
+                <div class="calendar__card-main__about">
+                    <div class="sub-title">
+                        3 Листопада 2021 р.
+                    </div>
+                    <h2> 2-й Український форум операторів ринку <br>
+                        косметичної продукції та дезінфекційних <br>
+                        засобів</h2>
+                    <p class="card-main_desc">
+                        Український форум операторів ринку косметичної продукції та дезінфекційних засобів проводиться
+                        за
+                        ініціативи <br>
+                        Асоціації «Оператори ринку медичних виробів» AMOMD з акцентом на регуляторний та економічний
+                        аспект
+                        <br>
+                        функціонування даних ринків.
+                    </p>
+                    <div class="location">
+                        <img src="assets/images/Vector-location.png" alt="" title="">
+                        <p>UBI КОНФЕРЕНЦ ХОЛ </p>
+                    </div>
                 </div>
-                <h2> 2-й Український форум операторів ринку <br>
-                    косметичної продукції та дезінфекційних <br>
-                    засобів</h2>
-                <p class="card-main_desc">
-                    Український форум операторів ринку косметичної продукції та дезінфекційних засобів проводиться за
-                    ініціативи <br>
-                    Асоціації «Оператори ринку медичних виробів» AMOMD з акцентом на регуляторний та економічний аспект
-                    <br>
-                    функціонування даних ринків.
-                </p>
-                <div class="location">
-                    <img src="assets/images/Vector-location.png" alt="" title="">
-                    <p>UBI КОНФЕРЕНЦ ХОЛ </p>
-                </div>
+
             </div>
 
-            <div class="card-container">
+            <div class="card-container-full">
                 <h3>найближчі події</h3>
                 <div class="calendar__card">
                     <div class="card-image">
@@ -165,7 +172,15 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
+        <div class="center-bnt">
+            <a href="calendar.html">
+                <button class="see-more">більше подій</button>
+            </a>
+        </div>
+
     </div>
 </section>
 
@@ -237,7 +252,6 @@
     </div>
 </section>
 
-
 <footer>
     <div class="container">
         <div class="footer__container-content">
@@ -275,6 +289,7 @@
         </div>
     </div>
 </footer>
+
 <script src="js/calendar.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ sliderPrpducts = tns({
     controls: false,
     responsive: {
        375: {
-            gutter: 80,
+            gutter: 120,
             items: 1
         },
     }
