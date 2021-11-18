@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
           rel="stylesheet">
-
 </head>
 <body>
 <header>
@@ -46,12 +45,12 @@
 
         <div class="burger-menu">
             <ul class="menu">
-                <li><a class="menuItem" href="#">Новини</a></li>
-                <li><a class="menuItem" href="#">наукові публікації</a></li>
-                <li><a class="menuItem" href="#">відео галерея</a></li>
-                <li><a class="menuItem" href="#">информация о препаратах</a></li>
-                <li><a class="menuItem" href="#">Календар подій</a></li>
-                <li><a class="menuItem" href="#">медичний калькулятор</a></li>
+                <li><a class="menuItem" href="news.html">Новини</a></li>
+                <li><a class="menuItem" href="publications.html">наукові публікації</a></li>
+                <li><a class="menuItem" href="video-gallery.html">відео галерея</a></li>
+                <li><a class="menuItem" href="info-preparation.html">информация о препаратах</a></li>
+                <li><a class="menuItem" href="calendar.html">Календар подій</a></li>
+                <li><a class="menuItem" href="calculator.html">медичний калькулятор</a></li>
                 <li><a class="menuItem" href="#">контакти</a></li>
             </ul>
             <button class="hamburger" onclick="myFunction(this)">
@@ -70,14 +69,15 @@
     </div>
 </section>
 
-
+<!--only max-width-->
 <section class="calculator">
 
     <div class="container">
         <h3>медицинский калькулятор</h3>
         <div class="calculator-container">
+
             <div class="calculator__list-container">
-                <div class="calculator__card">
+                <div data-calculator-id="calc-one" class="calculator__card">
                     <div class="calculator__card-content">
                         <div class="sub-title">Скорость титрования</div>
                         <h5>Расчет скорости инфузии препарата через линеомат</h5>
@@ -88,12 +88,11 @@
                             либо в мл/час.
                         </p>
                     </div>
-
                     <div class="calculator__card-image">
                         <img src="assets/images/calculator-card-1.jpg" alt="" title="">
                     </div>
                 </div>
-                <div class="calculator__card">
+                <div data-calculator-id="calc-two" class="calculator__card">
                     <div class="calculator__card-content">
                         <div class="sub-title">Global Registry of Acute Coronary Events</div>
                         <h5>Шкала GRACE</h5>
@@ -102,12 +101,11 @@
                             Coronary Events)
                         </p>
                     </div>
-
                     <div class="calculator__card-image">
                         <img src="assets/images/calculator-card-2.jpg" alt="" title="">
                     </div>
                 </div>
-                <div class="calculator__card">
+                <div data-calculator-id="calc-three" class="calculator__card">
                     <div class="calculator__card-content">
                         <div class="sub-title">Modification of diet in renal disease</div>
                         <h5>Скорость клубочковой фильтрации по формулам MDRD и <br>
@@ -117,12 +115,11 @@
                             вариабельной формуле MDRD (Modification of diet in renal disease).
                         </p>
                     </div>
-
                     <div class="calculator__card-image">
                         <img src="assets/images/calculator-card-3.jpg" alt="" title="">
                     </div>
                 </div>
-                <div class="calculator__card">
+                <div data-calculator-id="calc-four" class="calculator__card">
                     <div class="calculator__card-content">
                         <div class="sub-title">Скорость титрования</div>
                         <h5>Расчет скорости инфузии препарата через линеомат</h5>
@@ -133,12 +130,11 @@
                             либо в мл/час.
                         </p>
                     </div>
-
                     <div class="calculator__card-image">
                         <img src="assets/images/calculator-card-1.jpg" alt="" title="">
                     </div>
                 </div>
-                <div class="calculator__card">
+                <div data-calculator-id="calc-fife" class="calculator__card">
                     <div class="calculator__card-content">
                         <div class="sub-title">Global Registry of Acute Coronary Events</div>
                         <h5>Шкала GRACE</h5>
@@ -147,12 +143,11 @@
                             Coronary Events)
                         </p>
                     </div>
-
                     <div class="calculator__card-image">
                         <img src="assets/images/calculator-card-2.jpg" alt="" title="">
                     </div>
                 </div>
-                <div class="calculator__card">
+                <div data-calculator-id="calc-six" class="calculator__card">
                     <div class="calculator__card-content">
                         <div class="sub-title">Modification of diet in renal disease</div>
                         <h5>Скорость клубочковой фильтрации по формулам MDRD и <br>
@@ -162,12 +157,11 @@
                             вариабельной формуле MDRD (Modification of diet in renal disease).
                         </p>
                     </div>
-
                     <div class="calculator__card-image">
                         <img src="assets/images/calculator-card-3.jpg" alt="" title="">
                     </div>
                 </div>
-                <div class="calculator__card">
+                <div data-calculator-id="calc-seven" class="calculator__card">
                     <div class="calculator__card-content">
                         <div class="sub-title">Скорость титрования</div>
                         <h5>Расчет скорости инфузии препарата через линеомат</h5>
@@ -178,12 +172,11 @@
                             либо в мл/час.
                         </p>
                     </div>
-
                     <div class="calculator__card-image">
                         <img src="assets/images/calculator-card-1.jpg" alt="" title="">
                     </div>
                 </div>
-                <div class="calculator__card">
+                <div data-calculator-id="calc-eight" class="calculator__card">
                     <div class="calculator__card-content">
                         <div class="sub-title">Global Registry of Acute Coronary Events</div>
                         <h5>Шкала GRACE</h5>
@@ -192,11 +185,35 @@
                             Coronary Events)
                         </p>
                     </div>
-
                     <div class="calculator__card-image">
                         <img src="assets/images/calculator-card-2.jpg" alt="" title="">
                     </div>
                 </div>
+            </div>
+
+            <div id="calc-one" class="calculator-for-card">
+                <img src="assets/images/test-foto-caolc.png" alt="">
+            </div>
+            <div id="calc-two" class="calculator-for-card">
+                <img src="assets/images/test-foto-caolc.png" alt="">
+            </div>
+            <div id="calc-three" class="calculator-for-card">
+                <img src="assets/images/test-foto-caolc.png" alt="">
+            </div>
+            <div id="calc-four" class="calculator-for-card">
+                <img src="assets/images/test-foto-caolc.png" alt="">
+            </div>
+            <div id="calc-fife" class="calculator-for-card">
+                <img src="assets/images/test-foto-caolc.png" alt="">
+            </div>
+            <div id="calc-six" class="calculator-for-card">
+                <img src="assets/images/test-foto-caolc.png" alt="">
+            </div>
+            <div id="calc-seven" class="calculator-for-card">
+                <img src="assets/images/test-foto-caolc.png" alt="">
+            </div>
+            <div id="calc-eight" class="calculator-for-card">
+                <img src="assets/images/test-foto-caolc.png" alt="">
             </div>
         </div>
     </div>
@@ -205,8 +222,198 @@
     </div>
 
 </section>
+<!--only max-width-->
 
+<!--only-320-1919-->
+<section class="calculator-mobile">
+    <div class="container">
+        <h3>медицинский калькулятор</h3>
+        <div class="calculator-container">
 
+            <div class="calculator__list-container">
+
+                <div class="accordionWrapper">
+                    <div class="accordionItem close">
+                        <div class="accordionItemHeading">
+                            <div class="calculator__card">
+                                <div class="calculator__card-content">
+                                    <div class="sub-title">Скорость титрования</div>
+                                    <h5>Расчет скорости инфузии препарата через линеомат</h5>
+                                    <p>Этот калькулятор позволяет расчитать скорость инфузии препарата через <br>
+                                        линеомат (скорость титрования в мл/час) при известном количестве препарата в
+                                        <br>
+                                        милиграммах в известном объеме раствора. Также необходимо указать вес <br>
+                                        пациента и дозировку, определяемую либо в мкг*кг/мин,
+                                        либо в мл/час.
+                                    </p>
+                                </div>
+                                <div class="calculator__card-image">
+                                    <img src="assets/images/calculator-card-1.jpg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionItemContent">
+                            <img src="assets/images/test-foto-caolc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <div class="accordionItemHeading">
+                            <div class="calculator__card">
+                                <div class="calculator__card-content">
+                                    <div class="sub-title">Global Registry of Acute Coronary Events</div>
+                                    <h5>Шкала GRACE</h5>
+                                    <p>Оценка внутригоспитальной летальности и летальности в течение 6 месяцев <br>
+                                        после выписки у пациентов с ОКС по шкале GRACE (Global Registry of Acute <br>
+                                        Coronary Events)
+                                    </p>
+                                </div>
+                                <div class="calculator__card-image">
+                                    <img src="assets/images/calculator-card-2.jpg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionItemContent">
+                            <img src="assets/images/test-foto-caolc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <div class="accordionItemHeading">
+                            <div class="calculator__card">
+                                <div class="calculator__card-content">
+                                    <div class="sub-title">Modification of diet in renal disease</div>
+                                    <h5>Скорость клубочковой фильтрации по формулам MDRD и <br>
+                                        Schwartz
+                                    </h5>
+                                    <p>Расчет скорости клубочковой фильтрации по модифицированной 4-х <br>
+                                        вариабельной формуле MDRD (Modification of diet in renal disease).
+                                    </p>
+                                </div>
+                                <div class="calculator__card-image">
+                                    <img src="assets/images/calculator-card-3.jpg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionItemContent">
+                            <img src="assets/images/test-foto-caolc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <div class="accordionItemHeading">
+                            <div class="calculator__card">
+                                <div class="calculator__card-content">
+                                    <div class="sub-title">Скорость титрования</div>
+                                    <h5>Расчет скорости инфузии препарата через линеомат</h5>
+                                    <p>Этот калькулятор позволяет расчитать скорость инфузии препарата через <br>
+                                        линеомат (скорость титрования в мл/час) при известном количестве препарата в
+                                        <br>
+                                        милиграммах в известном объеме раствора. Также необходимо указать вес <br>
+                                        пациента и дозировку, определяемую либо в мкг*кг/мин,
+                                        либо в мл/час.
+                                    </p>
+                                </div>
+                                <div class="calculator__card-image">
+                                    <img src="assets/images/calculator-card-1.jpg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionItemContent">
+                            <img src="assets/images/test-foto-caolc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <div class="accordionItemHeading">
+                            <div class="calculator__card">
+                                <div class="calculator__card-content">
+                                    <div class="sub-title">Global Registry of Acute Coronary Events</div>
+                                    <h5>Шкала GRACE</h5>
+                                    <p>Оценка внутригоспитальной летальности и летальности в течение 6 месяцев <br>
+                                        после выписки у пациентов с ОКС по шкале GRACE (Global Registry of Acute <br>
+                                        Coronary Events)
+                                    </p>
+                                </div>
+                                <div class="calculator__card-image">
+                                    <img src="assets/images/calculator-card-2.jpg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionItemContent">
+                            <img src="assets/images/test-foto-caolc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <div class="accordionItemHeading">
+                            <div class="calculator__card">
+                                <div class="calculator__card-content">
+                                    <div class="sub-title">Modification of diet in renal disease</div>
+                                    <h5>Скорость клубочковой фильтрации по формулам MDRD и <br>
+                                        Schwartz
+                                    </h5>
+                                    <p>Расчет скорости клубочковой фильтрации по модифицированной 4-х <br>
+                                        вариабельной формуле MDRD (Modification of diet in renal disease).
+                                    </p>
+                                </div>
+                                <div class="calculator__card-image">
+                                    <img src="assets/images/calculator-card-3.jpg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionItemContent">
+                            <img src="assets/images/test-foto-caolc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <div class="accordionItemHeading">
+                            <div class="calculator__card">
+                                <div class="calculator__card-content">
+                                    <div class="sub-title">Скорость титрования</div>
+                                    <h5>Расчет скорости инфузии препарата через линеомат</h5>
+                                    <p>Этот калькулятор позволяет расчитать скорость инфузии препарата через <br>
+                                        линеомат (скорость титрования в мл/час) при известном количестве препарата в
+                                        <br>
+                                        милиграммах в известном объеме раствора. Также необходимо указать вес <br>
+                                        пациента и дозировку, определяемую либо в мкг*кг/мин,
+                                        либо в мл/час.
+                                    </p>
+                                </div>
+                                <div class="calculator__card-image">
+                                    <img src="assets/images/calculator-card-1.jpg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionItemContent">
+                            <img src="assets/images/test-foto-caolc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <div class="accordionItemHeading">
+                            <div class="calculator__card">
+                                <div class="calculator__card-content">
+                                    <div class="sub-title">Global Registry of Acute Coronary Events</div>
+                                    <h5>Шкала GRACE</h5>
+                                    <p>Оценка внутригоспитальной летальности и летальности в течение 6 месяцев <br>
+                                        после выписки у пациентов с ОКС по шкале GRACE (Global Registry of Acute <br>
+                                        Coronary Events)
+                                    </p>
+                                </div>
+                                <div class="calculator__card-image">
+                                    <img src="assets/images/calculator-card-2.jpg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionItemContent">
+                            <img src="assets/images/test-foto-caolc.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-bnt">
+            <button class="see-more">більше новин</button>
+        </div>
+
+    </div>
+</section>
+<!-- end only-320-1919-->
 
 <footer>
     <div class="container">
@@ -253,5 +460,8 @@
     </div>
 </footer>
 <script src="js/burger.js"></script>
+<script src="js/accordion.js"></script>
+<script src="js/calc-block-maxWidth.js"></script>
 </body>
 </html>
+
