@@ -1681,6 +1681,7 @@ footer .footer__sub-content .sub-content_desc {
 .video-gallery-mobile .tns-nav {
     display: block;
     text-align: center;
+    margin-top: 16px;
 }
 
 .video-gallery-mobile .tns-nav button {
@@ -2219,11 +2220,9 @@ footer .footer__sub-content .sub-content_desc {
 }
 
 .info-preparation-mobile .tns-nav {
-    position: absolute;
-    top: 420px;
-    left: calc(100% - 50% - 43px);
     display: block;
     text-align: center;
+    margin-top: 16px;
 }
 
 .info-preparation-mobile .tns-nav button {
