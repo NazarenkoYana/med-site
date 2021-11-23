@@ -1679,9 +1679,6 @@ footer .footer__sub-content .sub-content_desc {
 }
 
 .video-gallery-mobile .tns-nav {
-    position: absolute;
-    top: 440px;
-    left: calc(100% - 62%);
     display: block;
     text-align: center;
 }
