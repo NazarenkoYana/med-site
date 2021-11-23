@@ -6,15 +6,8 @@ sliderPrpducts = tns({
     center: true,
     edgePadding: 0,
     fixedWidth: 270,
-    gutter: 30,
+    gutter: 320,
     nav: true,
     navPosition: "bottom",
     controls: false,
-    responsive: {
-       375: {
-            gutter: 320,
-            items: 1
-        },
-    }
-
 });
