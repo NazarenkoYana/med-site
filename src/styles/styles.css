@@ -1695,6 +1695,7 @@ footer .footer__sub-content .sub-content_desc {
     -webkit-border-radius: 50%;
     background-clip: padding-box;
     -webkit-background-clip: padding-box;
+    padding: 0;
 }
 
 .video-gallery-mobile .tns-nav button.tns-nav-active {
