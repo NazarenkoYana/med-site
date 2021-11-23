@@ -325,8 +325,8 @@ input[data-search="search"]:focus {
 
 /*UL.CONTACT-HIDE*/
 ul.contact-hide {
-    display: flex;
-    justify-content: end;
+    /*display: flex;*/
+    /*justify-content: end;*/
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -337,6 +337,7 @@ ul.contact-hide li {
 
 ul.contact-hide li a {
     display: block;
+    text-align: end;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -456,7 +457,7 @@ ul.contact-hide li a {
     header .header__container-content {
         padding: 16px 24px 16px 24px;
     }
-    
+
     .sub-header {
         position: fixed;
         top: 68px;
