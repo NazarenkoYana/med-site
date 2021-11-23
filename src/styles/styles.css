@@ -189,8 +189,9 @@ input[data-search="search"] {
 input[data-search="search"]:hover {
     cursor: pointer;
 }
+
 input[data-search="search"]:focus {
-  width: 150px;
+    width: 150px;
 }
 
 /*SUB-HEADER*/
@@ -453,12 +454,12 @@ ul.contact-hide li a {
     }
 
     header .header__container-content {
-        padding: 0 24px;
+        padding: 16px 24px 16px 24px;
     }
-
+    
     .sub-header {
         position: fixed;
-        top: 36px;
+        top: 68px;
         width: 100%;
         background: #FFFFFF;
         z-index: 10;
