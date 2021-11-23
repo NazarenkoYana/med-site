@@ -1684,7 +1684,7 @@ footer .footer__sub-content .sub-content_desc {
     margin-top: 16px;
 }
 
-.video-gallery-mobile .tns-nav button {
+.video-gallery-mobile .tns-nav button{
     display: inline-block;
     width: 12px !important;
     height: 12px;
@@ -1692,10 +1692,17 @@ footer .footer__sub-content .sub-content_desc {
     border: none;
     margin-right: 4px;
     border-radius: 50%;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
 }
 
 .video-gallery-mobile .tns-nav button.tns-nav-active {
     background-color: #303841;
+    width: 12px !important;
+    height: 12px;
+    border-radius: 50%;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
 }
 
 @media screen and (min-width: 1920px) {
