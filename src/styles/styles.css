@@ -325,8 +325,6 @@ input[data-search="search"]:focus {
 
 /*UL.CONTACT-HIDE*/
 ul.contact-hide {
-    /*display: flex;*/
-    /*justify-content: end;*/
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -346,7 +344,6 @@ ul.contact-hide li a {
     text-decoration: none;
     padding: 24px 0 24px 20px;
     color: #EA9215;
-
 }
 
 @media screen and (min-width: 1920px) {
@@ -1684,13 +1681,14 @@ footer .footer__sub-content .sub-content_desc {
 .video-gallery-mobile .tns-nav {
     position: absolute;
     top: 440px;
-    left: calc(100% - 50% - 36px);
+    left: calc(100% - 62%);
     display: block;
     text-align: center;
 }
 
 .video-gallery-mobile .tns-nav button {
-    /*width: 8px !important;*/
+    display: inline-block;
+    width: 12px !important;
     height: 12px;
     background-color: #AEAEAE;
     border: none;
