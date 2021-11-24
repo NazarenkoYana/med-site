@@ -179,7 +179,7 @@ header .header__container-content .header-form ul li a img {
 input[data-search="search"] {
     background-image: url("../assets/images/Vector-header.svg");
     background-repeat: no-repeat;
-    background-position: 90%;
+    background-position: 100%;
     background-color: #FFFFFF;
     border: none;
     width: 32px;
