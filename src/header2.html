@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>med-sites</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.css"
+          integrity="sha512-r+5gXtPk5M2lBWiI+/ITUncUNNO15gvjjVNVadv9qSd3/dsFZdpYuVu4O2yELRwSZcxlsPKOrMaC7Ug3+rbOXw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%
+        }
+
+    </style>
+</head>
+<body onscroll="myFunction()">
+
+<header class="header" id="scrollHeader">
+    <div class="container">
+        <div class="header__container-content">
+            <div class="header-logo">
+                <img src="assets/images/header_logo.png" alt="" title="">
+            </div>
+            <div class="header-form">
+                <ul>
+                    <li><a class="header__link-active" href="#" onclick="openForm()">увійти</a></li>
+                    <li>
+                        <label>
+                            <input data-search="search"/>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="sub-header" id="scrollSubHeader">
+    <div class="container">
+        <div class="sub-header__container-content">
+            <ul>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="publications.html">наукові публікації</a></li>
+                <li><a href="video-gallery.html">відео галерея</a></li>
+                <li><a class="hide-4" href="info-preparation.html">информация о препаратах</a></li>
+                <li><a class="hide-3" href="calendar.html">Календар подій</a></li>
+                <li><a class="hide-2" href="calculator.html">медичний калькулятор </a></li>
+                <li><a class="hide-1" href="#">контакти</a></li>
+                <li class="clickLi"><a href="" class="h active">Бiльше <img src="assets/images/menu-responsive.png"
+                                                                            alt=""></a>
+                    <ul class="clickLi-container">
+                        <li><a class="h visible-4" href="info-preparation.html">информация <br>о препаратах</a></li>
+                        <li><a class="h visible-3" href="calendar.html">Календар <br>подій</a></li>
+                        <li><a class="h visible-2" href="calculator.html">медичний <br>калькулятор </a></li>
+                        <li><a class="h visible-1" href="#">контакти</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="burger-menu">
+            <ul class="menu">
+                <li><a class="menuItem" href="news.html">Новини</a></li>
+                <li><a class="menuItem" href="publications.html">наукові публікації</a></li>
+                <li><a class="menuItem" href="video-gallery.html">відео галерея</a></li>
+                <li><a class="menuItem" href="info-preparation.html">информация о препаратах</a></li>
+                <li><a class="menuItem" href="calendar.html">Календар подій</a></li>
+                <li><a class="menuItem" href="calculator.html">медичний калькулятор</a></li>
+                <li><a class="menuItem" href="#">контакти</a></li>
+            </ul>
+            <button class="hamburger" onclick="myFunction(this)">
+                    <span class="bars">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </span>
+            </button>
+        </div>
+
+        <ul class="contact-hide">
+            <li><a class="header__link-active-mobile" onclick="openForm()">увійти</a></li>
+        </ul>
+    </div>
+</section>
+
+<div class="content">
+    <h3>Sticky Navigation Example</h3>
+    <p>The navbar will stick to the top when you reach its scroll position.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<script>
+    var navbar = document.getElementById("scrollSubHeader");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+<!--<script src="js/burger.js"></script>-->
+<script src="js/form.js"></script>
+
+</body>
+</html>

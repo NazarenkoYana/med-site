@@ -165,10 +165,10 @@
 <!--</script>-->
 <script>
     var prevScrollposSubHeader = window.pageYOffset;
-    console.log("p" | +prevScrollposSubHeader);
+    // console.log("p" | +prevScrollposSubHeader);
     window.onscroll = function () {
         var currentScrollPosSub = window.pageYOffset;
-        console.log("c" + currentScrollPosSub)
+        // console.log("c" + currentScrollPosSub)
         if (prevScrollposSubHeader > currentScrollPosSub) {
             document.getElementById("scrollSubHeader").style.top = "70px";
         } else {
