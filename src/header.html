@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<header class="header" id="scrollHeader">
+<header class="header">
     <div class="container">
         <div class="header__container-content">
             <div class="header-logo">
@@ -151,30 +151,17 @@
         </div>
     </div>
 </section>
-<!--<script>-->
-<!--    var prevScrollposHeader = window.pageYOffset;-->
-<!--    window.onscroll = function() {-->
-<!--        var currentScrollPos = window.pageYOffset;-->
-<!--        if (prevScrollposHeader > currentScrollPos) {-->
-<!--            document.getElementById("scrollHeader").style.top = "0";-->
-<!--        } else {-->
-<!--            document.getElementById("scrollHeader").style.top = "-70px";-->
-<!--        }-->
-<!--        prevScrollposHeader = currentScrollPos;-->
-<!--    }-->
-<!--</script>-->
+
 <script>
-    var prevScrollposSubHeader = window.pageYOffset;
-    // console.log("p" | +prevScrollposSubHeader);
+    var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
-        var currentScrollPosSub = window.pageYOffset;
-        // console.log("c" + currentScrollPosSub)
-        if (prevScrollposSubHeader > currentScrollPosSub) {
+        var currentScroll = window.pageYOffset;
+        if (prevScrollpos > currentScroll) {
             document.getElementById("scrollSubHeader").style.top = "70px";
         } else {
             document.getElementById("scrollSubHeader").style.top = "0";
         }
-        prevScrollposSubHeader = currentScrollPosSub;
+        prevScrollpos = currentScroll;
     }
 </script>
 
