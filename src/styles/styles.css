@@ -325,15 +325,16 @@ input[data-search="search"]:focus {
 
 /*UL.CONTACT-HIDE*/
 ul.contact-hide {
-    display: flex;
-    justify-content: end;
-    flex: 0 0 100%;
+    /*display: flex;*/
+    /*justify-content: end;*/
+    /*flex: 0 0 100%;*/
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 ul.contact-hide li {
+    float: right;
 }
 
 ul.contact-hide li a {
