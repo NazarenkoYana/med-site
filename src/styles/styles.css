@@ -327,7 +327,7 @@ input[data-search="search"]:focus {
 ul.contact-hide {
     display: flex;
     justify-content: end;
-    flex: 0 0;
+    flex: 0 0 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
