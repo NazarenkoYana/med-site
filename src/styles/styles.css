@@ -1700,8 +1700,8 @@ footer .footer__sub-content .sub-content_desc {
 
 .video-gallery-mobile .tns-nav button {
     display: inline-block;
-    width: 12px !important;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background-color: #AEAEAE;
     border: none;
     margin-right: 4px;
@@ -2245,8 +2245,8 @@ footer .footer__sub-content .sub-content_desc {
 
 .info-preparation-mobile .tns-nav button {
     display: inline-block;
-    width: 12px !important;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background-color: #AEAEAE;
     border: none;
     margin-right: 4px;
@@ -3281,6 +3281,7 @@ footer .footer__sub-content .sub-content_desc {
 }
 
 .container-form {
+    /*position: absolute;*/
     background-color: #303841;
     position: fixed;
     top: 0;
