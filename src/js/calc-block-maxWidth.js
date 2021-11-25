@@ -1,11 +1,9 @@
-
 let cards = document.querySelectorAll('.calculator__list-container .calculator__card');
 let calculatorsBlocks = document.querySelectorAll('.calculator-for-card');
 let activeCard;
 
 cards.forEach((card) => {
     card.addEventListener('click', function (e) {
-
 
         cards.forEach(function (c) {
             c.classList.remove('bg');
@@ -23,12 +21,10 @@ cards.forEach((card) => {
         let calculatorBlock = document.querySelector(`#${card.dataset.calculatorId}`);
         calculatorBlock.classList.add('active');
 
-        console.log(calculatorBlock)
+        // console.log(calculatorBlock)
 
 
         card.classList.add('bg');
         activeCard = card;
-
-
     })
 })

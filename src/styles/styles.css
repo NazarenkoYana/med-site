@@ -128,10 +128,12 @@ header .header__container-content .header-logo {
     height: 100%;
     /*margin: 22px 0 17px 0;*/
 }
-header .header__container-content .header-logo a{
+
+header .header__container-content .header-logo a {
     display: block;
 }
-header .header__container-content .header-logo a:hover{
+
+header .header__container-content .header-logo a:hover {
     cursor: pointer;
 }
 
@@ -415,7 +417,6 @@ ul.contact-hide li a {
     /*.sub-header .sub-header__container-content ul li:first-of-type a {*/
     /*    padding-left: 0;*/
     /*}*/
-
     header .header__container-content .header-form ul li a.header__link-active {
         font-size: 16px;
     }
@@ -1472,6 +1473,8 @@ footer .footer__sub-content .sub-content_desc {
     max-width: 1294px;
     border-top: 4px solid #303841;
     margin: 80px auto 0;
+    /*margin: 0 auto 0;*/
+    padding-right: 134px;
 }
 
 .full-publications .publications__list-container .publications__card {
@@ -1500,7 +1503,7 @@ footer .footer__sub-content .sub-content_desc {
 }
 
 .full-publications .publications__list-container .publications__card .publications__card-image {
-    margin-right: 134px;
+    /*margin-right: 134px;*/
 }
 
 .full-publications .publications__list-container .publications__card .publications__card-image img {
@@ -1521,6 +1524,7 @@ footer .footer__sub-content .sub-content_desc {
 
     .full-publications .publications__list-container {
         border: none;
+        padding: 0;
     }
 
     .full-publications .publications__list-container .publications__card:first-of-type {
@@ -1566,6 +1570,7 @@ footer .footer__sub-content .sub-content_desc {
     .full-publications .publications__list-container {
         margin: 32px 0 auto;
         border: none;
+        padding: 0;
     }
 
     .full-publications .publications__list-container .publications__card {
@@ -2823,6 +2828,11 @@ footer .footer__sub-content .sub-content_desc {
         display: none;
     }
 
+    .full-calendar .calendar__list-container {
+        padding-right: 0;
+    }
+
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -2944,6 +2954,11 @@ footer .footer__sub-content .sub-content_desc {
     .full-calendar {
         display: none;
     }
+
+    .full-calendar .calendar__list-container {
+        padding-right: 0;
+    }
+
 }
 
 /*END CALENDAR*/
@@ -2958,6 +2973,7 @@ footer .footer__sub-content .sub-content_desc {
     max-width: 1294px;
     border-top: 4px solid #303841;
     margin: 80px auto 0;
+    padding-right: 134px;
 }
 
 .full-calendar .calendar__list-container .calendar__card {
@@ -3032,13 +3048,21 @@ footer .footer__sub-content .sub-content_desc {
 }
 
 .calculator .calculator__list-container .calculator__card {
+    /*display: flex;*/
+    /*flex: 1 1 100%;*/
+    /*justify-content: space-between;*/
+    /*border-bottom: 1px solid #AEAEAE;*/
+    padding: 32px 67px 0 67px;
+    user-select: none;
+}
+
+.calculator .calculator__list-container .calculator__card .calc-cont {
     display: flex;
     flex: 1 1 100%;
     justify-content: space-between;
     border-bottom: 1px solid #AEAEAE;
-    padding: 32px 67px 46px 67px;
-    /*padding: 32px 0 46px 0;*/
-    margin-right: 40px;
+    padding: 0 0 46px 0;
+
     user-select: none;
 }
 
@@ -3102,8 +3126,6 @@ footer .footer__sub-content .sub-content_desc {
     justify-content: space-between;
     border-bottom: 1px solid #AEAEAE;
     padding: 32px 67px 46px 67px;
-    /*padding: 32px 0 46px 0;*/
-    margin-right: 40px;
     user-select: none;
 }
 
@@ -3148,10 +3170,16 @@ footer .footer__sub-content .sub-content_desc {
 }
 
 /*END CALCULATOR-MOBILE*/
+.calculator .calculator__list-container .calculator__card.bg .calc-cont {
+    border: none;
+}
 
+/*.calculator .calculator__list-container .calculator__card.bg .calc-cont{*/
+/*    border: none;*/
+/*}*/
 .bg {
     background-color: #E5E5E5;
-    padding: 32px 67px 46px 67px !important;
+    padding: 32px 67px 0 67px !important;
     transition: 0.3s ease padding;
 }
 
@@ -3217,7 +3245,7 @@ footer .footer__sub-content .sub-content_desc {
     }
 
     .calculator-mobile .calculator__list-container .calculator__card {
-        margin-right: 0;
+        /*margin-right: 0;*/
         padding: 24px 0;
     }
 
@@ -3268,7 +3296,7 @@ footer .footer__sub-content .sub-content_desc {
     }
 
     .calculator-mobile .calculator__list-container .calculator__card {
-        margin-right: 0;
+        /*margin-right: 0;*/
         padding: 16px 0 24px 0;
     }
 
