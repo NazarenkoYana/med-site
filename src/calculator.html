@@ -85,7 +85,10 @@
     <div class="container-form">
         <div class="container">
             <form>
-                <a class="form-logo" href="#"><img src="assets/images/header_logo.png" alt=""></a>
+                <div class="form-heading">
+                    <a class="form-logo" href="#"><img src="assets/images/header_logo.png" alt=""></a>
+                    <button class="form-close" type="button" onclick="closeForm()"><img src="assets/images/form-close.png" alt=""></button>
+                </div>
                 <h5>вітаю</h5>
                 <p class="form-desc">Увійдіть у свій акаунт, щоб отримати доступ до
                     своєї підписки в MD.UA</p>
@@ -100,7 +103,7 @@
                     </label>
                 </p>
                 <p class="form-forgot">Забули пароль?</p>
-                <button class="form-main" onclick="closeForm()">
+                <button type="button" class="form-main">
                     продовжити
                 </button>
                 <p class="form-question"><span>Відсутній акаунт?</span><span
