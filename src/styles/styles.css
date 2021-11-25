@@ -454,11 +454,9 @@ ul.contact-hide li a {
         background: #FFFFFF;
         z-index: 10;
 
-        display:block;
+        display: block;
         transition: top 0.3s;
     }
-
-
 
     header .header__container-content {
         padding: 16px 24px 16px 24px;
@@ -472,7 +470,7 @@ ul.contact-hide li a {
         background: #FFFFFF;
         z-index: 20;
 
-        display:block;
+        display: block;
         transition: top 0.3s;
     }
 
@@ -3302,12 +3300,6 @@ footer .footer__sub-content .sub-content_desc {
     width: 100%;
     position: absolute;
     right: -200px;
-
-}
-
-.container-form .form-image img {
-    /*width: 100%;*/
-    /*height: 100%;*/
 }
 
 .container-form form {
@@ -3323,6 +3315,28 @@ footer .footer__sub-content .sub-content_desc {
     margin-top: 80px;
 }
 
+.container-form form .form-heading {
+    position: relative;
+}
+
+.container-form form .form-heading button.form-close {
+    position: absolute;
+    right: -40px;
+    top: -35px;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.container-form form .form-heading button.form-close img {
+    width: 20px;
+    height: auto;
+}
+
+.container-form .form-heading a.form-logo {
+    display: inline-block;
+}
+
 .container-form h5 {
     font-style: normal;
     font-weight: 600;
@@ -3333,9 +3347,6 @@ footer .footer__sub-content .sub-content_desc {
     margin: 40px 0 24px 0;
 }
 
-.container-form a.form-logo {
-    display: block;
-}
 
 .container-form p.form-desc {
     font-style: normal;
@@ -3521,11 +3532,18 @@ footer .footer__sub-content .sub-content_desc {
         margin: 24px 0;
     }
 
-    .container-form a.form-logo img {
+    .container-form .form-heading a.form-logo img {
         max-width: 124px;
         width: 100%;
     }
-
+    .container-form form .form-heading button.form-close {
+        right: -10px;
+        top: -10px;
+    }
+    .container-form form .form-heading button.form-close img{
+        width: 16px;
+        height: auto;
+    }
     .container-form h5 {
         font-size: 16px !important;
         line-height: 100% !important;
@@ -3595,6 +3613,9 @@ footer .footer__sub-content .sub-content_desc {
         line-height: 160% !important;
         margin-left: 0 !important;
     }
+
+
+
 
 }
 
