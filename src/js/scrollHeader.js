@@ -1,10 +1,12 @@
+var hideOnScrollOffset = 70;
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
+
+window.addEventListener('scroll', function () {
     var currentScroll = window.pageYOffset;
-    if (prevScrollpos > currentScroll) {
-        document.getElementById("scrollSubHeader").style.top = "70px";
+    if (hideOnScrollOffset > currentScroll) {
+        document.querySelector("#scrollSubHeader").style.top = "70px";
     } else {
-        document.getElementById("scrollSubHeader").style.top = "0";
+        document.querySelector("#scrollSubHeader").style.top = "0";
     }
     prevScrollpos = currentScroll;
-}
+});

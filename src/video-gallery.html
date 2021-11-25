@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<header>
+<header class="header">
     <div class="container">
         <div class="header__container-content">
             <div class="header-logo">
@@ -36,6 +36,51 @@
 </header>
 <section class="sub-header" id="scrollSubHeader">
     <div class="container">
+        <div class="sub-header__container-content">
+            <ul>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="publications.html">наукові публікації</a></li>
+                <li><a href="video-gallery.html">відео галерея</a></li>
+                <li><a class="hide-4" href="info-preparation.html">информация о препаратах</a></li>
+                <li><a class="hide-3" href="calendar.html">Календар подій</a></li>
+                <li><a class="hide-2" href="calculator.html">медичний калькулятор </a></li>
+                <li><a class="hide-1" href="#">контакти</a></li>
+                <li class="clickLi"><a href="" class="h active">Бiльше <img src="assets/images/menu-responsive.png"
+                                                                            alt=""></a>
+                    <ul class="clickLi-container">
+                        <li><a class="h visible-4" href="info-preparation.html">информация <br>о препаратах</a></li>
+                        <li><a class="h visible-3" href="calendar.html">Календар <br>подій</a></li>
+                        <li><a class="h visible-2" href="calculator.html">медичний <br>калькулятор </a></li>
+                        <li><a class="h visible-1" href="#">контакти</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="burger-menu">
+            <ul class="menu">
+                <li><a class="menuItem" href="news.html">Новини</a></li>
+                <li><a class="menuItem" href="publications.html">наукові публікації</a></li>
+                <li><a class="menuItem" href="video-gallery.html">відео галерея</a></li>
+                <li><a class="menuItem" href="info-preparation.html">информация о препаратах</a></li>
+                <li><a class="menuItem" href="calendar.html">Календар подій</a></li>
+                <li><a class="menuItem" href="calculator.html">медичний калькулятор</a></li>
+                <li><a class="menuItem" href="#">контакти</a></li>
+            </ul>
+            <button class="hamburger" onclick="myFunction(this)">
+                    <span class="bars">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </span>
+            </button>
+        </div>
+
+        <ul class="contact-hide">
+            <li><a class="header__link-active-mobile" onclick="openForm()">увійти</a></li>
+        </ul>
+    </div>
+</section>ass="container">
         <div class="sub-header__container-content">
             <ul>
                 <li><a href="news.html">Новини</a></li>
